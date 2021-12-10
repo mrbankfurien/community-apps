@@ -1,0 +1,9 @@
+https://www.geeksforgeeks.org/how-to-add-icons-at-the-bottom-of-tab-navigation-in-react-native/ 
+
+https://reactnative.dev/docs/colors
+
+https://reactnavigation.org/docs/bottom-tab-navigator
+
+https://reactnavigation.org/docs/screen-options/
+
+https://reactnavigation.org/docs/tab-based-navigation/
