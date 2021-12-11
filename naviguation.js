@@ -10,7 +10,7 @@ import { FaChevronLeft } from 'react-icons/fa'
 
 const Naviguation = createStackNavigator({
     Splash : {
-        screen : Splash,
+        screen : Home,
         navigationOptions:{
             headerShown: false,
         }
