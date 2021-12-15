@@ -7,3 +7,6 @@ https://reactnavigation.org/docs/bottom-tab-navigator
 https://reactnavigation.org/docs/screen-options/
 
 https://reactnavigation.org/docs/tab-based-navigation/
+
+
+https://docs.nativebase.io/building-drawer-navigation

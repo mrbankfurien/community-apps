@@ -4,7 +4,7 @@ import { FaUser } from 'react-icons/fa'
 import { FaBook } from 'react-icons/fa'
 
 
-class Create extends React.Component{
+class Update extends React.Component{
     
     render(){
         return(
@@ -62,4 +62,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default  Create
+export default  Update

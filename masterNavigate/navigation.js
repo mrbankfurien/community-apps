@@ -1,16 +1,16 @@
 import React from 'react'
-import Register from './components/register'
-import Splash from './components/splash-screen'
-import Login from './components/login'
-import Recovery from './components/recovery'
-import Home from './dashboard/home'
+import Register from '../components/register'
+import Splash from '../components/splash-screen'
+import Login from '../components/login'
+import Recovery from '../components/recovery'
+import Home from '../dashboard/home'
 import { createAppContainer} from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
 import { FaChevronLeft } from 'react-icons/fa'
 
 const Naviguation = createStackNavigator({
     Splash : {
-        screen : Home,
+        screen : Splash,
         navigationOptions:{
             headerShown: false,
         }

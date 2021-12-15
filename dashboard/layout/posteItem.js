@@ -4,8 +4,14 @@ import { FaTrash , FaBook } from "react-icons/fa"
 
 class PosteItem extends React.Component{
 
+    constructor(props){
+        super(props)
+    }
+
     _update(id){
-        console.log("you update poste id : "+id);
+        this.props.navigation.navigate('Update') ;
+        const action = { type : 'GO_TO_UPDATE' , value : 'UPDATE_PART'}
+        this.props.dispath(action)
     }
 
     _deleted(id){
@@ -14,25 +20,21 @@ class PosteItem extends React.Component{
 
     render(){
 
-        const data = this.props.data;
-
-        
-
         return(
             <View style={styles.item}>
                 <Text style={styles.itemHeader}> Publié le :
-                    <Text style={styles.itemDate} > {data.date}</Text>
+                    <Text style={styles.itemDate} > {this.props.data.date}</Text>
                 </Text>
                 <View style={styles.itemBody}>
-                    <Text styles={styles.itemText}>{data.body}</Text>
+                    <Text styles={styles.itemText}>{this.props.data.body}</Text>
                 </View>
                 <Text style={styles.itemAuteur}> Auteur :
-                    <Text style={styles.itemName} > {data.auteur}</Text>
+                    <Text style={styles.itemName} > {this.props.data.auteur}</Text>
                 </Text>
                 <View style={styles.footer}>
-                    <FaBook size={20} color="yellow" onClick={()=>this._update(data.id)}/>
-                    <FaTrash size={20} color="red" onClick={()=>this._deleted(data.id)}/>
-                </View>
+                    <FaBook size={20} color="yellow" onClick={()=>this._update(this.props.data.id)}/>
+                    <FaTrash size={20} color="red" onClick={()=>this._deleted(this.props.data.id)}/>
+                </View>     
             </View>
         )
     }

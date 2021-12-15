@@ -1,14 +1,21 @@
 import React from "react"
 import { View , StyleSheet  } from 'react-native'
 import community from '../data/community'
-import CommunityItem from "../layout/communityItem"
-export default class Community extends React.Component{
+import FavorisItem from "../layout/favorisItem"
+
+export default class Favoris extends React.Component{
+
+
+    constructor(props){
+        super(props)
+    }
+
     render(){
         return(
             <View style={styles.container}>   
                 {
                     community.map((data)=>(
-                        <CommunityItem data={data} key={data.id}/>
+                        <FavorisItem data={data} key={data.id}/>
                     ))
                 }
             </View>
